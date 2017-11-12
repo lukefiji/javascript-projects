@@ -187,7 +187,7 @@ function setupWorkDescription(workEntryData, $workDescription) {
   $workDescription.text(formatWorkDescription(workEntryData.description));
 
   if (workEntryData.description.length > maxVisibleWorkDescriptionLength) {
-    $workDescription.addClass('shortened').on('click', function() {
+    $workDescription.addClass('shortened').on('click', function onClick() {
       $workDescription
         .removeClass('shortened')
         .off('click')
